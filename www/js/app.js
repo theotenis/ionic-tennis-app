@@ -34,6 +34,12 @@ angular.module('starter', ['ionic', 'services', 'controllers'])
         controller: 'AppCtrl'
       })
 
+      .state('app.trackMatch', {
+        url: "/app/trackMatch",
+        templateUrl: "views/trackMatch.html",
+        controller: 'TrackMatchCtrl'
+      })
+
       .state('app.home', {
         url: "/home",
         views: {

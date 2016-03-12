@@ -121,6 +121,10 @@ angular.module('controllers', [])
 
     $scope.user = UserService.getUser();
 
+    $scope.trackMatch = function() {
+      $state.go('app.trackMatch');
+    };
+
     $scope.showLogOutMenu = function() {
       var hideSheet = $ionicActionSheet.show({
         destructiveText: 'Logout',
@@ -146,6 +150,10 @@ angular.module('controllers', [])
         }
       });
     };
+  })
+
+  .controller('TrackMatchCtrl', function($scope){
+
   })
 
 ;
