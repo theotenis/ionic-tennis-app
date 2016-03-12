@@ -9090,9 +9090,9 @@ a.button {
   transition-duration: 0s; }
 
 .welcome-view {
-  background-color: #FF7258; }
+  background-color: #FFFFFF; }
   .welcome-view .top-content {
-    height: 66%; }
+    height: 70%; }
     .welcome-view .top-content .app-copy {
       text-align: center;
       padding-top: 13vh; }
@@ -9100,16 +9100,18 @@ a.button {
       font-size: 60px;
       font-family: sans-serif;
       font-weight: 600;
-      color: #FFFFFF;
+      color: #FF7258;
       letter-spacing: 8px;
       text-transform: uppercase; }
     .welcome-view .top-content .app-tagline {
       font-size: 16px;
       margin-top: 0px;
       font-weight: 500;
-      color: rgba(255, 255, 255, 0.95); }
+      color: rgba(255, 114, 88, 0.95); }
+    .welcome-view .top-content .app-image {
+      border: 0px; }
   .welcome-view .bottom-content {
-    height: 34%; }
+    height: 30%; }
     .welcome-view .bottom-content .facebook-sign-in {
       border-radius: 4px;
       font-weight: 500;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.startapplabs.facebook-login" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>facebook-login</name>
+  <name>Tennis Statistic</name>
   <description>
-    Example app of how to add Facebook Native authentication into an Ionic Framework app.
+    A lightweight tennis scorekeeper with match statistics.
   </description>
-  <author email="info@ionicthemes.com" href="https://ionicthemes.com/">
-    IonicThemes
+  <author email="ady.teodorescu@gmail.com">
+    Teodorescu Adrian-Cristian
   </author>
   <content src="index.html"/>
   <access origin="*"/>

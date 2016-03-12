@@ -1,10 +1,10 @@
 .welcome-view
 {
-	background-color: $background-color;
+	background-color: $welcome-background-color;
 
 	.top-content
   {
-    height: 66%;
+    height: 70%;
 
 		.app-copy
 		{
@@ -17,7 +17,7 @@
 			font-size: 60px;
 			font-family: sans-serif;
 			font-weight: 600;
-			color: $welcome-color;
+			color: $welcome-text-color;
 			letter-spacing: 8px;
 			text-transform: uppercase;
 		}
@@ -27,13 +27,18 @@
 			font-size: 16px;
 			margin-top: 0px;
 			font-weight: 500;
-			color: rgba($welcome-color, 0.95);
+			color: rgba($welcome-text-color, 0.95);
 		}
+
+    .app-image
+    {
+      border: 0px;
+    }
 	}
 
 	.bottom-content
   {
-    height: 34%;
+    height: 30%;
 
 		.facebook-sign-in
 		{
