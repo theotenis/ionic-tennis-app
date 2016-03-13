@@ -114,21 +114,25 @@ angular.module('controllers', [])
 
 
   .controller('AppCtrl', function($scope){
-
+    console.log("Meniu stanga!");
   })
 
   .controller('HomeCtrl', function($scope, UserService, $ionicActionSheet, $state, $ionicLoading){
 
+    console.log("Entered - HomeCtrl");
     $scope.user = UserService.getUser();
 
     $scope.trackMatch = function() {
-      $state.go('app.trackMatch');
+      console.log("Before - trackMatch");
+      $state.go('trackMatch');
+      console.log("After - trackMatch");
     };
 
     $scope.showLogOutMenu = function() {
+      console.log("Entered - showLogOutMenu");
       var hideSheet = $ionicActionSheet.show({
         destructiveText: 'Logout',
-        titleText: 'Are you sure you want to logout? This app is awsome so I recommend you to stay.',
+        titleText: 'Are you sure you want to logout?',
         cancelText: 'Cancel',
         cancel: function() {},
         buttonClicked: function(index) {
@@ -152,8 +156,9 @@ angular.module('controllers', [])
     };
   })
 
-  .controller('TrackMatchCtrl', function($scope){
-
+  .controller('TrackMatchCtrl', function($scope, UserService, $ionicActionSheet, $state, $ionicLoading){
+    $scope.user = UserService.getUser();
+    console.log("Entered - TrackMatchCtrl");
   })
 
 ;
