@@ -113,20 +113,19 @@ angular.module('controllers', [])
 
 
 
-  .controller('AppCtrl', function($scope){
+  .controller('AppCtrl', function($scope, UserService, $ionicActionSheet, $state, $ionicLoading){
     console.log("Meniu stanga!");
+    //$scope.trackMatch = function() {
+    //  console.log("Before - trackMatch");
+    //  $state.go('app.trackMatch');
+    //  console.log("After - trackMatch");
+    //};
   })
 
   .controller('HomeCtrl', function($scope, UserService, $ionicActionSheet, $state, $ionicLoading){
 
     console.log("Entered - HomeCtrl");
     $scope.user = UserService.getUser();
-
-    $scope.trackMatch = function() {
-      console.log("Before - trackMatch");
-      $state.go('trackMatch');
-      console.log("After - trackMatch");
-    };
 
     $scope.showLogOutMenu = function() {
       console.log("Entered - showLogOutMenu");
@@ -156,8 +155,8 @@ angular.module('controllers', [])
     };
   })
 
-  .controller('TrackMatchCtrl', function($scope, UserService, $ionicActionSheet, $state, $ionicLoading){
-    $scope.user = UserService.getUser();
+  .controller('TrackMatchCtrl', function($scope){
+    //$scope.user = UserService.getUser();
     console.log("Entered - TrackMatchCtrl");
   })
 

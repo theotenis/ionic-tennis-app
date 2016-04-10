@@ -34,7 +34,7 @@ angular.module('starter', ['ionic', 'services', 'controllers'])
         controller: 'AppCtrl'
       })
 
-      .state('trackMatch', {
+      .state('app.trackMatch', {
         url: "/trackMatch",
         templateUrl: "views/trackMatch.html",
         controller: 'TrackMatchCtrl'
